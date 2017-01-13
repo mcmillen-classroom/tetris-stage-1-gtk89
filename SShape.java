@@ -1,5 +1,4 @@
 public class SShape {
-  
   int colOrigin;  
   int rowOrigin;
   int col0;
@@ -85,6 +84,7 @@ public class SShape {
   
   public boolean rotate() {
     // TODO: do not allow the shape to rotate if the cells are not empty.
+    // Use grid.isEmpty() and grid.isInBounds()
     
     if (direction == 0) {
       --row0;

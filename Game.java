@@ -87,7 +87,9 @@ public class Game {
         
         switch (name) {
           case "I":
-                
+            IShape i = new IShape();
+            i.initPointsFromOrigin(colMidpoint, rowMidpoint);
+            grid.setShape(i);
             break;
           case "S":
             SShape s = new SShape();
@@ -95,6 +97,9 @@ public class Game {
             grid.setShape(s);
             break;
           case "Z":
+            ZShape z = new ZShape();
+            z.initPointsFromOrigin(colMidpoint, rowMidpoint);
+            grid.setShape(z);
             break;
         }
       }

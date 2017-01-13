@@ -57,6 +57,16 @@ public class Grid extends JPanel {
       moved = s.moveLeft();
     }
     
+    // Uncomment this to test your IShape.moveLeft() method.
+    // if (i != null) {
+    //   moved = i.moveLeft();
+    // }
+     
+    // Uncomment this to test your ZShape.moveLeft() method.
+    // if (z != null) {
+    //   moved = z.moveLeft();
+    // }
+    
     if (moved) {
       repaint();
     }
@@ -71,6 +81,16 @@ public class Grid extends JPanel {
       moved = s.moveRight();
     }
     
+    // Uncomment this to test your IShape.moveRight() method.
+    // if (i != null) {
+    //   moved = i.moveRight();
+    // }
+     
+    // Uncomment this to test your ZShape.moveRight() method.
+    // if (z != null) {
+    //   moved = z.moveRight();
+    // }
+     
     if (moved) {
       repaint();
     }
@@ -79,11 +99,21 @@ public class Grid extends JPanel {
   }
 
   public boolean rotate() {
-        boolean moved = false;
+    boolean moved = false;
     
     if (s != null) {
       moved = s.rotate();
     }
+    
+    // Uncomment this to test your IShape.rotate() method.
+    // if (i != null) {
+    //   moved = i.rotate();
+    // }
+     
+    // Uncomment this to test your ZShape.rotate() method.
+    // if (z != null) {
+    //   moved = z.rotate();
+    // }
     
     if (moved) {
       repaint();
@@ -122,6 +152,7 @@ public class Grid extends JPanel {
     
     if (s != null) {
       g.setColor(Color.RED);
+
       g.fillRect(
         s.colOrigin * CELL_SIZE + 1, 
         s.rowOrigin * CELL_SIZE + 1, 
@@ -143,6 +174,64 @@ public class Grid extends JPanel {
       g.fillRect(
         s.col2 * CELL_SIZE + 1, 
         s.row2 * CELL_SIZE + 1, 
+        CELL_SIZE - 1, 
+        CELL_SIZE - 1
+      );
+    }
+    
+    if (i != null) {
+      g.setColor(Color.CYAN);
+
+      g.fillRect(
+        i.colOrigin * CELL_SIZE + 1, 
+        i.rowOrigin * CELL_SIZE + 1, 
+        CELL_SIZE - 1, 
+        CELL_SIZE - 1
+      );
+      g.fillRect(
+        i.col0 * CELL_SIZE + 1, 
+        i.row0 * CELL_SIZE + 1, 
+        CELL_SIZE - 1, 
+        CELL_SIZE - 1
+      );
+      g.fillRect(
+        i.col1 * CELL_SIZE + 1, 
+        i.row1 * CELL_SIZE + 1, 
+        CELL_SIZE - 1, 
+        CELL_SIZE - 1
+      );
+      g.fillRect(
+        i.col2 * CELL_SIZE + 1, 
+        i.row2 * CELL_SIZE + 1, 
+        CELL_SIZE - 1, 
+        CELL_SIZE - 1
+      );
+    }
+    
+    if (z != null) {
+      g.setColor(Color.GREEN);
+
+      g.fillRect(
+        z.colOrigin * CELL_SIZE + 1, 
+        z.rowOrigin * CELL_SIZE + 1, 
+        CELL_SIZE - 1, 
+        CELL_SIZE - 1
+      );
+      g.fillRect(
+        z.col0 * CELL_SIZE + 1, 
+        z.row0 * CELL_SIZE + 1, 
+        CELL_SIZE - 1, 
+        CELL_SIZE - 1
+      );
+      g.fillRect(
+        z.col1 * CELL_SIZE + 1, 
+        z.row1 * CELL_SIZE + 1, 
+        CELL_SIZE - 1, 
+        CELL_SIZE - 1
+      );
+      g.fillRect(
+        z.col2 * CELL_SIZE + 1, 
+        z.row2 * CELL_SIZE + 1, 
         CELL_SIZE - 1, 
         CELL_SIZE - 1
       );
