@@ -37,3 +37,32 @@ to be 2 spaces.
 - [ ] Fix SShape.rotate() method: it is not checking whether cells are empty before rotating
 - [ ] Implement ZShape and all of its methods. Comment in z code in Grid.java to test your ZShape class.
 - [ ] Implement IShape and all of its methods. Comment in i code in Grid.java to test your IShape class.
+
+### Turn In
+
+Use your GitHub repository to turn in your assignment. Complete each task one at
+a time. Once you've completed the task and it work as you'd like, commit and push it.
+
+Check the status of your repository. Notice that the files you've modified are listed:
+
+`git status`
+
+![git status](gitStatus.png)
+
+Add the files you want to commit to the staging area:
+
+`git add SShape.java`
+
+![git add](gitAdd.png)
+
+Commit the staged files (include the task description from the assignment): 
+
+`git commit -m "Task: TASK DESCRIPTION"`
+
+![git commit](gitCommit.png)
+
+Push your commits back to GitHub:
+
+`git push`
+
+![git push](gitPush.png)
