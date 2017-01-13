@@ -27,7 +27,7 @@ Run this from your repository directory:
 When you are writing your Java code, make sure that you set your tab size
 to be 2 spaces.
 
-![Proper Tab Size](tabeSize.png) 
+![Proper Tab Size](tabSize.png) 
 
 ### Tasks for Assignment
 
